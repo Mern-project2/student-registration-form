@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Student registration form</title>
+        <title>student course enrollment form</title>
         <link rel="stylesheet" href="assets/CSS/style.css">
     </head>
 <body>
-    <p>Hello world</p>
+    <h1>Student course enrollment form</h1>
+    <form >
+        <label for="firstname"><b> Name:</b></label>
+        <input type="text"
+        placeholder="enter your firstname"
+        id="firstname"
+        name="firstname"
+        required>
+        <p>
+        <label for="lastname"><b>Last Name:</b></label>
+        <input type="text"
+        placeholder="enter your last name"
+        id="lastname"
+        name="lastname"
+        required>
+        <p>
+        <label for="registernumber"><b>Register Number:</b></label>
+        <input type="text"
+        placeholder="enter your register number"
+        id="regnum"
+        name="regnum"
+        required>
+        </p>
+        <p>
+        <label for="phoneno"><b>Phone number</b></label>
+        <input type="text" 
+        placeholder="enter your phone number"
+        id="phoneno"
+        name="phoneno"
+        pattern="[789][0-9]{9}"
+        required>
+        </p>
+        <p>
+        
+        <label for="gender"><b>Gender</b></label><br>
+        
+        <input type="radio" name="male"  required="required">Male<br>
+        <input type="radio" name="male" required="required">Female<br>
+        </p>
+        <p>
+        <label for="email"><b>Email</b></label>
+        <input type="text" 
+        placeholder="enter the email"
+        id="email-id"
+        name="email-id"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        required>
+        </p>
+        <p>
+        <label for="department"><b>Department:</b></label>
+        <input type="text"
+        id="department"
+        name="department"
+        required>
+    </p>
+        <p>        
+        <label for="gender"><b>Current Year</b></label><br>
+        <input type="radio" name="year"  required="required">I year<br>
+        <input type="radio" name="year" required="required">II year<br>
+        <input type="radio" name="year"  required="required">III year<br>
+        <input type="radio" name="year" required="required">IV year<br>
+        </p>
+        <p>
+        <label for="languages" ><b>Languages known</b></label><br>
+        <input type="checkbox" id="laguage1" name="laguage1"  >
+        <label for="language1"> C</label><br>
+        <input type="checkbox" id="laguage2" name="laguage2">
+        <label for="language2"> C++</label><br>
+        <input type="checkbox" id="laguage3" name="laguage3" >
+        <label for="language3">java</label><br>
+        <input type="checkbox" id="laguage4" name="laguage4">
+        <label for="language4">python</label>
+        </p>
+        <p>
+        <label for="gender"><b>Available slots:</b></label><br> 
+        <input type="radio" name="time1">10am<br>
+        <input type="radio" name="time1">2pm<br>
+        <input type="radio" name="time1">5pm<br><br>
+        </p>
+        <p>
+            <label for="resume"><b>Upload your current resume:</b></label><br>
+        <input type="file" id="myFile" name="myfile" accept=".pdf"  required="required">
+        </p>
+        <button class="button"><b>REGISTER</b></button>
+    </form>
 </body>
 </html>
 
