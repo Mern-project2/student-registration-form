@@ -1,3 +1,35 @@
+.button{
+	border: none;
+	width: 210px;
+    padding:9px;
+	height: 33px;
+    left: 8%;
+    font-size: 16px;
+    font-weight:500;
+	background: #a36db4;
+    border-radius: 8px;
+    opacity: 1;  
+}
+.button:hover{
+    color: rgb(59, 233, 15);
+}
+.studentenrollform{
+    position: absolute;
+    left: 35%;
+    top: 9%;
+    font-family: 'Playfair Display', serif;
+    width: 600px;
+    border: #a36db4;
+    border-top: #539add;
+    box-shadow: 0 0 20px 0 #999;
+    }
 *{
-    border: 0px;
+    background-color: #fff;
+    border: #539add;
+    margin: 0;
+    padding: 0;
+    
+}
+h2{
+    color: rgb(192, 44, 234);
 }

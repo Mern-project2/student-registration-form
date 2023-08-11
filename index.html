@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>student course enrollment form</title>
+        <title>Student course enrollment form</title>
         <link rel="stylesheet" href="assets/CSS/style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display&display=swap');
+          </style> 
     </head>
-<body>
-    <h1>Student course enrollment form</h1>
-    <form >
-        <label for="firstname"><b> Name:</b></label>
+<body >
+    
+    
+    <div class="studentenrollform">
+        <h2>Student course enrollment form</h2>
+        <form >
+        <div class="container">
+        <label for="firstname" class="stuname"><b>Frist Name:</b></label>
         <input type="text"
         placeholder="enter your firstname"
         id="firstname"
         name="firstname"
         required>
-        <p>
-        <label for="lastname"><b>Last Name:</b></label>
+        <label for="lastname" class="stuname"><b>Last Name:</b></label>
         <input type="text"
         placeholder="enter your last name"
         id="lastname"
         name="lastname"
         required>
-        <p>
-        <label for="registernumber"><b>Register Number:</b></label>
+        <br><br>
+        <label for="registernumber" class="regnumber"><b>Register Number:</b></label>
         <input type="text"
         placeholder="enter your register number"
         id="regnum"
         name="regnum"
         required>
-        </p>
-        <p>
-        <label for="phoneno"><b>Phone number</b></label>
+        <label for="phoneno"class="phoneno"><b>Phone number</b></label>
         <input type="text" 
         placeholder="enter your phone number"
         id="phoneno"
         name="phoneno"
         pattern="[789][0-9]{9}"
         required>
-        </p>
         <p>
         
-        <label for="gender"><b>Gender</b></label><br>
+        <label for="gender"class="gender"><b>Gender</b></label><br>
         
         <input type="radio" name="male"  required="required">Male<br>
         <input type="radio" name="male" required="required">Female<br>
         </p>
         <p>
-        <label for="email"><b>Email</b></label>
+        <label for="email"class ="email"><b>Email</b></label>
         <input type="text" 
         placeholder="enter the email"
         id="email-id"
         name="email-id"
         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
         required>
-        </p>
-        <p>
         <label for="department"><b>Department:</b></label>
         <input type="text"
         id="department"
         name="department"
         required>
-    </p>
+        </p>
         <p>        
-        <label for="gender"><b>Current Year</b></label><br>
+        <label for="gender" class="email"><b>Current Year</b></label><br>
         <input type="radio" name="year"  required="required">I year<br>
         <input type="radio" name="year" required="required">II year<br>
-        <input type="radio" name="year"  required="required">III year<br>
-        <input type="radio" name="year" required="required">IV year<br>
-        </p>
-        <p>
-        <label for="languages" ><b>Languages known</b></label><br>
+        <input type="radio" name="year" required="required">III year<br>
+        <input type="radio" name="year"  required="required">IV year<br>
+        <label for="languages" class="language"><b>Languages known</b></label><br>
         <input type="checkbox" id="laguage1" name="laguage1"  >
         <label for="language1"> C</label><br>
         <input type="checkbox" id="laguage2" name="laguage2">
@@ -76,20 +75,18 @@
         <input type="checkbox" id="laguage3" name="laguage3" >
         <label for="language3">java</label><br>
         <input type="checkbox" id="laguage4" name="laguage4">
-        <label for="language4">python</label>
-        </p>
-        <p>
-        <label for="gender"><b>Available slots:</b></label><br> 
+        <label for="language4">python</label><br>
+        <label for="gender" class="availableslot"><b>Available slots:</b></label><br> 
         <input type="radio" name="time1">10am<br>
         <input type="radio" name="time1">2pm<br>
         <input type="radio" name="time1">5pm<br><br>
+        <label for="resume" class="uploadfile"><b>Upload your current resume:</b></label><br>
+        <input type="file" id="myFile" name="myfile" accept=".pdf"  required="required"><br><br>
+        <button class="button" >REGISTER</button>
         </p>
-        <p>
-            <label for="resume"><b>Upload your current resume:</b></label><br>
-        <input type="file" id="myFile" name="myfile" accept=".pdf"  required="required">
-        </p>
-        <button class="button"><b>REGISTER</b></button>
-    </form>
+        </form>
+        </div>
+    </div>
+    
 </body>
 </html>
-
